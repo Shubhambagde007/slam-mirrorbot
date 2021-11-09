@@ -223,6 +223,12 @@ except KeyError:
     MEGA_EMAIL_ID = None
     MEGA_PASSWORD = None
 try:
+    IMAGE_URL = getConfig('IMAGE_URL')
+    if len(IMAGE_URL) == 0:
+        IMAGE_URL = 'https://github.com/Shubhambagde007/slam-mirrorbot/raw/master/IMG_20211109_205040_460.jpg'
+except KeyError:
+    IMAGE_URL = 'https://github.com/Shubhambagde007/slam-mirrorbot/raw/master/IMG_20211109_205040_460.jpg'
+try:
     UPTOBOX_TOKEN = getConfig('UPTOBOX_TOKEN')
 except KeyError:
     logging.warning('UPTOBOX_TOKEN not provided!')
