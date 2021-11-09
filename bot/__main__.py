@@ -10,7 +10,7 @@ from telegram import ParseMode
 from telegram.ext import CommandHandler
 from telegraph import Telegraph
 from wserver import start_server_async
-from bot import bot, app, dispatcher, updater, botStartTime, IGNORE_PENDING_REQUESTS, IS_VPS, PORT, alive, web, OWNER_ID, AUTHORIZED_CHATS, telegraph_token
+from bot import bot, app, dispatcher, updater, botStartTime, IMAGE_URL, IGNORE_PENDING_REQUESTS, IS_VPS, PORT, alive, web, OWNER_ID, AUTHORIZED_CHATS, telegraph_token
 from bot.helper.ext_utils import fs_utils
 from bot.helper.telegram_helper.bot_commands import BotCommands
 from bot.helper.telegram_helper.message_utils import *
